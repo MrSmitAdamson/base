@@ -14,6 +14,22 @@ body
 }
 
 @font-face {
+  font-family: 'Farsan';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/farsan/v8/VEMwRoJ0vY_zsyzK3aWo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Racing Sans One';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/racingsansone/v8/sykr-yRtm7EvTrXNxkv5jfKKyDCAKHDn.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
     font-family: "Old English Text";
     src: url(/fonts/oldenglishtextmt.woff2) format("woff2"), url(../fonts/oldenglishtextmt.ttf) format("ttf");
     font-weight: bold;
@@ -144,6 +160,9 @@ body
 
 .article__continue
 {
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
     display: block;
 }
 
@@ -183,6 +202,13 @@ body
 }
 
 /*––––––––––––––––––Блок главной фотографии–––––––––*/
+.main-photo__caption
+{
+    font-size: 0.7em;
+    text-transform: uppercase;
+    text-align: right;
+}
+
 .main-photo__wrapper
 {
     margin: 0;
@@ -195,11 +221,14 @@ body
 
 .main-photo__title
 {
+    font-size: 1.2em;
+    font-weight: bold;
     margin: 0;
 }
 
 .main-photo__desc
 {
+    font-size: 0.8em;
     margin-bottom: 20px;
 }
 
@@ -260,7 +289,20 @@ body
 
 .multicolumn .article__title
 {
+    font-weight: bold;
     margin: 10px 0 0 0;
+}
+
+.multicolumn__left .article__title
+{
+    font-family: "Racing Sans One", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+}
+
+.multicolumn__right .article__title
+{
+    font-family: "Farsan", sans-serif;
+    font-size: 2.3em;
 }
 
 .center-column
