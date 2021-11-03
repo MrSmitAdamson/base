@@ -13,6 +13,22 @@ body
     content: '';
 }
 
+@font-face {
+    font-family: "Old English Text";
+    src: url(/fonts/oldenglishtextmt.woff2) format("woff2"), url(../fonts/oldenglishtextmt.ttf) format("ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Six Caps';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/sixcaps/v11/6ae_4KGrU7VR7bNmaYcV_3Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+
 /*––––––––––––––––––Шапка газеты––––––––––––––––––––*/
 .header
 {
@@ -28,6 +44,8 @@ body
     padding: 25px 10px;
 
     border: 1px solid;
+
+    text-align: center;
 }
 
 .header__weather
@@ -40,17 +58,26 @@ body
 .header__weather-title
 {
     margin: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 1.17em;
+    text-align: center;
 }
 
 .header__weather-text
 {
     margin: 0;
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 1.1em;
 }
 
 .header__title
 {
     overflow: visible;
-
+    font-family: "Old English Text", 'Temporal', Times, serif;
+    font-size: 5em;
+    text-align: center;
     margin: 0;
 }
 
@@ -67,7 +94,7 @@ body
 .sub-header__copyright
 {
     display: inline-block;
-
+    font-size: 0.6em;
     margin: 0 30px;
 }
 
@@ -88,6 +115,9 @@ body
 {
     margin-top: 0;
     margin-bottom: 10px;
+    font-family: 'Six Caps';
+    font-size: 3.2em;
+    font-weight: bold;
 }
 
 .article__help
@@ -106,7 +136,9 @@ body
 .article__author
 {
     display: block;
-
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.8em;
     margin-top: 10px;
 }
 
@@ -130,7 +162,24 @@ body
 
 .article__subtitle
 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.17em;
+    font-weight: bold;
     margin: 10px 0;
+}
+
+.article__content 
+{
+    text-indent: 2ch;
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.article__content p
+{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 /*––––––––––––––––––Блок главной фотографии–––––––––*/
