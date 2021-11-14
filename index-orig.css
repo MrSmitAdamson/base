@@ -31,7 +31,7 @@ body
 
 @font-face {
     font-family: "Old English Text";
-    src: url(/fonts/oldenglishtextmt.woff2) format("woff2"), url(../fonts/oldenglishtextmt.ttf) format("ttf");
+    src: url(/oldenglishtextmt.woff2) format("woff2"), url(../oldenglishtextmt.ttf) format("ttf");
     font-weight: bold;
     font-style: normal;
 }
